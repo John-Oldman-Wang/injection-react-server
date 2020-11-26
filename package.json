@@ -1,0 +1,57 @@
+{
+  "name": "injection-react-server",
+  "version": "0.0.1",
+  "description": "一个可以在react服务端渲染项目中使用的JavaScript和TypeScript依赖注入库。它是Angular依赖注入的一部分，这意味着它具有完整，快速，可靠且经过良好测试的功能。",
+  "main": "./bundles/index.js",
+  "module": "./es/index.js",
+  "jsnext:main": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc",
+    "build:es": "tsc -p ./tsconfig.es.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier-tslint fix '**/*.(ts|tsx)'",
+    "prettier": "pretty-quick --staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokisnojok/injection-react-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nokisnojok/injection-react-server/issues"
+  },
+  "homepage": "https://github.com/nokisnojok/injection-react-server#readme",
+  "peerDependencies": {
+    "reflect-metadata": ">= 0.1.13",
+    "injection-js": ">= 2.3.2",
+    "react": ">= 15.8.0",
+    "react-dom": ">= 15.8.0",
+    "injection-react": ">= 0.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.55",
+    "@types/react-dom": "^16.9.9",
+    "@types/node": "^14.14.10",
+    "husky": "^4.3.0",
+    "injection-js": "^2.3.2",
+    "injection-react": "0.0.5",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2",
+    "prettier-tslint": "^0.4.2",
+    "pretty-quick": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
