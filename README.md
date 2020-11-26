@@ -1,0 +1,2 @@
+# injection-react-server
+一个可以在react服务端渲染项目中使用的JavaScript和TypeScript依赖注入库。它是Angular依赖注入的一部分，这意味着它具有完整，快速，可靠且经过良好测试的功能。
